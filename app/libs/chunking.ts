@@ -122,8 +122,6 @@ export function chunkText(
  * 8. Return the result
  */
 function getLastWords(text: string, maxLength: number): string {
-	// TODO: Implement this function!
-	// YOUR CODE HERE
 	if (text.length <= maxLength) {
 		return text;
 	}
@@ -134,9 +132,7 @@ function getLastWords(text: string, maxLength: number): string {
 			break;
 		}
 		result = words[i] + ' ' + result;
+		// result = words[i] + result;
 	}
 	return result;
-
-	// Placeholder return - replace with your implementation
-	// throw new Error('getLastWords not implemented yet!');
 }
